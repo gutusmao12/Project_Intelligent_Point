@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -11,13 +12,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-
-import { LoginComponent, LogarComponent } from './components';
-import { LoginService } from '.';
+import { CadastrarPjComponent, CadastroPjComponent } from './componentes';
 
 @NgModule({
-  declarations: [LoginComponent, LogarComponent],
+  declarations: [CadastrarPjComponent, CadastroPjComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -31,6 +29,5 @@ import { LoginService } from '.';
     MatSnackBarModule,
     FlexLayoutModule,
   ],
-  providers: [LoginService],
 })
-export class LoginModule {}
+export class CadastroPjModule {}
